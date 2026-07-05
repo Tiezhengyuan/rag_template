@@ -1,0 +1,9 @@
+streamlit
+torch
+sentence-transformers
+python-dotenv
+langchain-groq
+chromadb
+watchdog
+langchain_openrouter
+langchain-text-splitters
