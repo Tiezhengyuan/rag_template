@@ -1,0 +1,15 @@
+version: '3.11-slim'
+
+services:
+  streamlit-app:
+    container_name: rag
+    build: .
+    ports:
+      - "${STREAMLIT_PORT}:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app
+      - ./faiss_index:/app/faiss_index
+    command: streamlit run app.py --server.address=0.0.0.0 --server.port=8501
+    restart: unless-stopped

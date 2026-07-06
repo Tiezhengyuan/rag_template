@@ -20,7 +20,7 @@ def build_retrieval():
     )
     # load vectore store
     db = FAISS.load_local(
-        Path.cwd() / "src" /"faiss_index",
+        Path.cwd() / "faiss_index",
         embeddings,
         allow_dangerous_deserialization=True,
     )

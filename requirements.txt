@@ -5,5 +5,7 @@ python-dotenv
 langchain-groq
 chromadb
 watchdog
+langchain
+langchain_classic
 langchain_openrouter
 langchain-text-splitters
